@@ -1,0 +1,20 @@
+.main{
+    height: 85vh;
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    width: 15%;
+    border: 3px solid black;
+}
+.rightshape{
+    width: 85%;
+    height: 180%;
+    background-color: rgb(164, 235, 235);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 40%;
+    position: relative;
+    bottom: 35rem;
+    left: 5rem;
+    border: 3px solid black;
+}
