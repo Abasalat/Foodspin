@@ -38,7 +38,7 @@ const FoodspinWheel = ({ options }) => {
               className="segment"
               style={{
                 "--index": index + 1,
-                top: `calc(50% - ${y + 40}px)`,
+                top: `calc(50% - ${y + 60}px)`,
                 left: `calc(50% + ${x + -50}px)`,
               }}
             >

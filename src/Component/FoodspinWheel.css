@@ -1,4 +1,4 @@
-.foodspin-wheel {
+/* .foodspin-wheel {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,16 +8,15 @@
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  background-color: #f0f0f0;
   position: relative;
   margin-bottom: 20px;
-  overflow: visible; /* Ensure segments are visible outside the wheel */
+  overflow: visible; /* Ensure segments are visible outside the wheel 
 }
 
 .segment {
   position: absolute;
-  width: 100px; /* Adjust based on the number of segments and wheel size */
-  height: 100px; /* Adjust based on the number of segments and wheel size */
+  width: 100px; /* Adjust based on the number of segments and wheel size 
+  height: 100px; /* Adjust based on the number of segments and wheel size 
   text-align: center;
   font-size: 14px;
   display: flex;
@@ -35,7 +34,7 @@
 }
 
 .segment.highlighted {
-  background-color: #ff0000; /* Highlighted segment color */
+  background-color: #ff0000; /* Highlighted segment color 
 }
 
 .spin-animation {
@@ -73,4 +72,4 @@ button:hover {
 
 .result {
   text-align: center;
-}
+} */

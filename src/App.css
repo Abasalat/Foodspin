@@ -9,3 +9,86 @@
   --light: #FFEEDE;
   --orange: #FF922C;
 }
+
+.foodspin-wheel {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 100;
+  bottom: -14rem;
+  left: 21.5rem;
+  background-color: none;
+}
+
+.wheel {
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  border: dashed #bc3c3c 3px;
+  position: relative;
+  margin-bottom: 20px;
+  overflow: visible; /* Ensure segments are visible outside the wheel */
+}
+
+.segment {
+  background-color: none;
+  position: absolute;
+  width: 120px; /* Adjust based on the number of segments and wheel size */
+  height: 120px; /* Adjust based on the number of segments and wheel size */
+  text-align: center;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.segment:nth-child(odd) {
+  background-color: #ffcc00;
+}
+
+.segment:nth-child(even) {
+  background-color: #ff9900;
+}
+
+.segment.highlighted {
+  background-color: #ff0000; /* Highlighted segment color */
+}
+
+.spin-animation {
+  animation: spin 2s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(30deg);
+  }
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.result {
+  text-align: center;
+}
